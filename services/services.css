@@ -1,0 +1,102 @@
+
+body {
+  background-image: url('https://cdn.wallpapersafari.com/38/60/RvLtEc.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* This keeps the background image fixed while scrolling */
+}
+.two {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.four{
+  max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    color: rgb(0, 0, 0);
+}
+.four span{
+  padding-left: 200px;
+}
+.five span{
+  padding-left: 200px;
+}
+.five{
+  max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    color: rgb(0, 0, 0);
+}
+
+
+.four h3 {
+  line-height: 1.75;
+  font-size: 35px; /* Adjust the line-height value to add space between lines */
+}
+.five h3 {
+  line-height: 1.75;
+  font-size: 35px; /* Adjust the line-height value to add space between lines */
+}
+
+.twop {
+  border: 2px solid rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(41, 226, 205);
+  height: 150px; 
+  margin: 0px 20px; /* top and bottom margin 40px, left and right margin 20px */
+  max-width: calc(100% - 40px);
+  margin-top: 40px; /* subtracting margins from the maximum width */
+  text-align: center;
+}
+
+
+body{
+    padding-top: 100px;
+    
+}
+
+
+  .card-text{
+    font-size: 25px;
+  }
+  .firstrow{
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .one{
+    margin: 40px;
+  }
+ .hi img{
+  height: 200px;
+ }
+ .pq img{
+  height: 210px;
+ }
+ .pqr img{
+  height: 190px;
+ }
+ .pqrs img{
+  height: 170px;
+ }
+
+
+ @media (max-width: 670px){
+  .twop{
+    margin: 20px;
+  }
+  .firstrow{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+   }
+  

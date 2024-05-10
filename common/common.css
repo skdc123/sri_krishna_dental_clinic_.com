@@ -1,0 +1,436 @@
+body {
+    overflow-x: hidden; /* Prevents horizontal overflow */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px 60px;
+    padding-bottom: 10px;
+    z-index: 1000;
+    transition: padding 0.5s, background 0.5s, border-bottom 0.5s, box-shadow 0.5s; /* Add transition properties */
+    border-bottom: 2px solid transparent; /* Initially transparent border-bottom */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Add box shadow */
+}
+
+nav.sticky {
+    top: 0;
+    padding: 5px 20px;
+    background: rgb(255, 255, 255);
+     /* Change box shadow on sticky */
+}
+
+nav .logo {
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: 0.5s;
+    white-space: nowrap; /* Ensures the text stays in a single line */
+}
+nav img{
+    max-width: 90px;
+    margin: 20px;
+}
+nav .top{
+    position: relative;
+    color: rgb(0, 21, 255);
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: 0.5s;
+    font-family:"Archivo Black", sans-serif;
+   font-size: 40px;
+    
+}
+nav .bottom{
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: 0.5s;
+    font-family:'Times New Roman', Times, serif;
+   font-size: 20px;
+}
+
+nav ul {
+    padding-top: 2vh;
+    padding-left: 20vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+    list-style: none;
+    margin: 0 30px;
+}
+
+nav ul li a {
+    position: relative;
+    margin: 0px;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family:"Bebas Neue", sans-serif;
+    letter-spacing: 3px;
+    
+}
+
+nav.sticky .logo,
+nav.sticky ul li a {
+    color: black;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid black;
+    padding-bottom: 7px;
+}
+.fa-plus {
+    font-size: 50px; 
+    margin-left: 20px;/* Adjust the size as needed */
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .py-5 {
+    padding: 4rem 0;
+  }
+  .bg-dark {
+  background-color:rgb(11, 11, 109);
+  color: #fff;
+}
+.footer .social a {
+    margin: 0 20px;
+  }
+  footer .top{
+    position: relative;
+    color: rgb(254, 254, 254);
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: 0.5s;
+    font-family:"Archivo Black", sans-serif;
+   font-size: 40px;
+   white-space:nowrap;
+    
+}
+footer .bottom{
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: 0.5s;
+    font-family:'Times New Roman', Times, serif;
+   font-size: 20px;
+}
+footer img{
+    max-width: 90px;
+    margin: 20px;
+}
+  .container1 a{
+    text-decoration: none;
+  }
+  .container1 li{
+    list-style-type: none;
+  }
+  .container1{
+    max-width: 1200px;
+          align-items: center;
+          margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+  }
+  .container1 img{
+      
+      width: 200px;
+      justify-self: flex-end;
+  }
+  .hi ul {
+    padding: 0; /* Remove default padding from the ul */
+}
+
+.hi ul li {
+    margin: 20px; /* Add margin to create space between list items */
+}
+
+.hi ul li a {
+    padding: 10px 20px; /* Add padding to the links */
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.hi ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Change background color on hover */
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+.social a:hover i {
+    color: aqua !important; /* Use !important to ensure the style overrides any other conflicting styles */
+}
+.footer .container1 .logo-container {
+    display: flex;
+    align-items: center;
+}
+.footer .container1 .logo1 i {
+    margin-right: 10px;
+}
+.footer .container1 .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.footer .container1 .logo-container img,
+.footer .container1 .logo-container .logo,
+.footer .container1 .logo-container i {
+    margin-right: 40px;
+}
+
+.hi,
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.hi ul,
+.social {
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.hi ul li,
+.social a {
+    margin-left: 10px; /* Add spacing between items */
+}
+.logo-container i{
+    margin-left: 0px;
+}
+
+.hamburger-button {
+  position: absolute; /* Position the hamburger button */
+  top: 57%; /* Align vertically at 50% of the navbar */
+  right: 20px; /* Adjust distance from the right edge */
+  transform: translateY(-50%); /* Center vertically */
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.hamburger-button .hamburger-line {
+  width: 30px;
+  height: 3px;
+  background: #333;
+  margin: 6px 0;
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 250px;
+  height: 100%;
+  z-index: 100;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+}
+
+.mobile-menu.active {
+  right: 0;
+}
+
+.mobile-menu ul {
+    margin-top: 100px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the start (left) */
+    list-style-type: none; /* Remove default list styles */
+    padding-left: 0; /* Remove default left padding of the ul */
+  }
+  
+  .mobile-menu ul li {
+    margin-left: 40px; 
+    margin-bottom: 20px;
+    width: 80%;
+    border-bottom: 1px solid rgb(203, 197, 197);
+   
+  }
+  
+
+.mobile-menu ul li a {
+  font-size: 20px;
+  transition: 0.3s;
+  
+  
+}
+
+@media (max-width: 670px) {
+  nav .main-menu {
+      display: none; /* Hide the normal navbar menu */
+  }
+
+  nav .hamburger-button {
+      display: block; 
+      /* Show the hamburger button */
+  }
+
+  nav .logo {
+      margin-left: 20px; /* Adjust margin for the logo */
+  }
+  nav img{
+      max-width: 70px;
+      margin-left: 0px;
+      margin-right: 0px;
+  }
+  nav .top{
+      font-size: 30px;
+  }
+  nav .bottom{
+      font-size: 20px;
+  }
+  .fa-plus {
+      font-size: 40px; 
+      margin-left: 10px;/* Adjust the size as needed */
+  }
+  footer .logo {
+    margin-left: -10px; 
+    margin-right: 0px;/* Adjust margin for the logo */
+}
+footer img{
+    max-width: 70px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+footer .top{
+    font-size: 30px;
+}
+footer .bottom{
+    font-size: 20px;
+}
+footer .fa-plus {
+    font-size: 40px; 
+    margin-left: -20px;/* Adjust the size as needed */
+}
+footer .logo-container{
+margin: auto;
+}
+footer .hi{
+    margin-top: -20px;
+}
+.grid{
+    display: flex;
+    flex-direction: column;
+  }
+  nav{
+    padding-left:20px ;
+  }
+  nav{
+    padding-left:30px ;
+  }
+  nav ul li a:hover {
+    border-bottom: none;
+   
+}
+}
+@media (max-width: 500px) {
+  nav .main-menu {
+      display: none; /* Hide the normal navbar menu */
+  }
+
+  nav .hamburger-button {
+      display: block; 
+      /* Show the hamburger button */
+  }
+
+  nav .logo {
+      margin-left: 10px; /* Adjust margin for the logo */
+  }
+  nav img{
+      max-width: 60px;
+      margin-left: 0px;
+      margin-right: 0px;
+      
+  }
+  nav .top{
+      font-size: 25px;
+  }
+  nav .bottom{
+      font-size: 15px;
+  }
+  .fa-plus {
+      font-size: 30px; 
+      margin-left: 10px;
+     
+  }
+  footer .logo {
+    margin-left: -21px; 
+    margin-right: 0px;/* Adjust margin for the logo */
+}
+footer img{
+    max-width: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+footer .top{
+    font-size: 25px;
+    margin-right: 0;
+    margin-left: 0;
+}
+footer .bottom{
+    font-size: 15px;
+}
+footer .fa-plus {
+    font-size: 30px; 
+    margin-left: -31px;;/* Adjust the size as needed */
+}
+footer .logo-container{
+margin: auto;
+}
+footer .hi{
+    margin-top: -30px;
+}
+.grid{
+    display: flex;
+    flex-direction: column;
+  }
+  nav{
+    padding-left:20px ;
+  }
+  nav ul li a:hover {
+    border-bottom: none;
+   
+}
+}
+
+  
